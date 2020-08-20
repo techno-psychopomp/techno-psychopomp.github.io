@@ -50,16 +50,6 @@
 		margin-top: 18px;
 	}
 
-	&::after{
-		content: '';
-		width: 40px;
-		height: 3px;
-		background-color: @color-second;
-		display: inline-block;
-		margin-top: 20px;
-	}
-
-
 	&.text-light{
 		.el-icon i, h5, h3, p{
 			color: #fff;
@@ -720,7 +710,7 @@
 		letter-spacing: 0.5;
 		color: @color-text;
 		line-height: 24px;
-
+		height: 260px;
 		p{
 			margin: 22px;
 
@@ -739,6 +729,12 @@
 					content: "\f057";
 					color: @color-text;
 				}
+			}
+		}
+
+		p.no-item {
+			&::before{
+				content: "";
 			}
 		}
 	}
