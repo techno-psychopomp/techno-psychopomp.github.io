@@ -43,7 +43,7 @@
 	<div class="wrapper">
 		
 		<header id="header">
-			<div class="container">
+			<div class="header-container">
 				<div class="row">
 					<div class="col-sm-12">
 						
@@ -53,12 +53,12 @@
 
 							<nav>
 								<ul class="menu">
-									<li><a href="index.html">Inicio</a></li>
-									<li><a href="about.html">Cómo funciona</a></li>
-									<li><a href="service.html">Susbcripciones</a></li>
-									<li><a href="service.html">Categorías</a></li>
-									<li><a href="service.html">Especiales</a></li>
-									<li><a href="service.html">Contacto</a></li>
+									<li class="active"><a title="Inicio" href="index.html">Inicio</a></li>
+									<li><a title="Cómo funciona" href="about.html">Cómo funciona</a></li>
+									<li><a title="Subscripciones" href="service.html">Susbcripciones</a></li>
+									<li><a title="Categorias" href="service.html">Categorías</a></li>
+									<li><a title="Especiales" href="service.html">Especiales</a></li>
+									<li><a title="Contacto" href="service.html">Contacto</a></li>
 								</ul>
 
 								<ul class="menu-right">
@@ -85,10 +85,12 @@
         
         <section class="cover-section bg-right" data-bg-image="images/hero_1920x561.jpg">
             
-            <div class="cover-entry">
-				<h3>Envío gratis durante todo Agosto</h3>
-				<h2>Tus antojos antes de que los tengas</h2>
-				<button class="button">Ver Promos</button>
+            <div class="cover-entry has-overlay">
+				<h2>Tus antojos antes <br/>de que los tengas</h2>
+				<div class="subheader">
+					<h5><strong>Envío gratis</strong> durante todo Agosto</h5>
+					<button class="button pill">Ver Promos</button>	
+				</div>
             </div>
 
 		</section>
@@ -104,9 +106,9 @@
 
                                 <div class="tt-el-service">
                                     <div class="el-icon">
-                                        <img src="images/icono_paleta.png" alt="image-icon" data-width="37px">
+                                        <img src="images/icono_paleta.png" alt="image-icon" data-width="60px">
                                     </div>
-                                    <h4>Paso 1</h4>
+                                    <h4>Antojate</h4>
                                     <p>
                                         Mira la amplia variedad de opciones de antojos que tenemos para vos.
                                     </p>
@@ -117,9 +119,9 @@
 
                                 <div class="tt-el-service">
                                     <div class="el-icon">
-                                        <img src="images/icono_muffin.png" alt="image-icon" data-width="40px">
+                                        <img src="images/icono_muffin.png" alt="image-icon" data-width="60px">
                                     </div>
-                                    <h4>Paso 2</h4>
+                                    <h4>Elegi</h4>
                                     <p>
                                         Elegi la sweet box que mejor vaya con tus necesidades (o antojos)
                                     </p>
@@ -129,9 +131,9 @@
                             <div class="col-xs-12 col-sm-4 col-md-4">
                                 <div class="tt-el-service">
                                     <div class="el-icon">
-                                        <img src="images/icono_dona.png" alt="image-icon" data-width="50px">
+                                        <img src="images/icono_dona.png" alt="image-icon" data-width="60px">
                                     </div>
-                                    <h4>Paso 3</h4>
+                                    <h4>Recibi</h4>
                                     <p>
 										Completa la subscripcion y recibilo en tu casa. Lista para que la disfrutes
                                     </p>
@@ -146,31 +148,47 @@
 			</div>
 			
 			<div class="fullwidth-container pv12">
-                <div class="overlay" data-bg-image="images/separador.jpg">
-                </div>
+				<div class="overlay" data-bg-image="images/separador.jpg">
+				</div>
+				<div class="row">
+					<div class="col-sm-12 discount-container">
+						<h3 class="text-light">15% de descuento en tu primer mes</h3>
+						<p class="text-light">
+							Dejanos tu email y te enviaremos un código de descuento 
+						</p>
+						<div>
+							<form>
+								<input type="text" placeholder="Email..." />
+								<button class="button">Enviar</button>	
+							</form>
+						</div>
+					</div>
+				</div>
             </div>
 
-			<div class="fullwidth-container pv12">
+			<div class="fullwidth-container pv8">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
                             
                             <div class="tt-el-caption text-center">
-                                <h3>Elegí tu <strong>Sweet Box</strong></h3>
+								<h3>Elegí tu <strong>SWEET BOX</strong></h3>
+								<p>
+									Listas para que las disfrutes en tu casa. Todos los meses recibirás una selección de
+									golosinas nacionales e internacionales especialemente curadas por nuestros duendes.
+								</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-4">
+							<div class="price-image-container">
+								<img class="price-image" src="images/c1.png" />
+							</div>
                             <div class="tt-el-price">
                                 <h4>Sorpresa</h4>
-                                <div class="el-round">
-                                    <div class="entry-round">
-                                        <span class="el-val">$45</span>
-                                        <span class="val-desc">Por mes</span>
-                                    </div>
-                                </div>
+                                <h5>$145/mes</h5>
                                 <div class="el-lists">
                                     <p>12 golosinas surtidas</p>
 									<p>Descuento para ediciones especiales</p>
@@ -182,14 +200,12 @@
 						</div>
 						
 						<div class="col-sm-4">
+							<div class="price-image-container">
+								<img class="price-image" src="images/c2.png" />
+							</div>
                             <div class="tt-el-price">
                                 <h4>Dulzura</h4>
-                                <div class="el-round">
-                                    <div class="entry-round">
-                                        <span class="el-val">$100</span>
-                                        <span class="val-desc">Por mes</span>
-                                    </div>
-                                </div>
+                                <h5>$280/mes</h5>
                                 <div class="el-lists">
                                     <p>20 golosinas surtidas</p>
 									<p>1 edición especial</p>
@@ -202,14 +218,12 @@
 						</div>
 						
 						<div class="col-sm-4">
+							<div class="price-image-container">
+								<img class="price-image" src="images/c3.png" />
+							</div>
                             <div class="tt-el-price">
                                 <h4>Chocoamor</h4>
-                                <div class="el-round">
-                                    <div class="entry-round">
-                                        <span class="el-val">$160</span>
-                                        <span class="val-desc">Por mes</span>
-                                    </div>
-                                </div>
+                                <h5>420/mes</h5>
                                 <div class="el-lists">
                                     <p>35 golosinas surtidas</p>
 									<p>6 variedades de chocolate</p>
@@ -226,92 +240,7 @@
 
 			</div>
 			
-			<div class="fullwidth-container pv4 overlay-color text-light text-center" data-bg-color="#01CCBD">
-				<h3 class="text-light">15% de descuento en tu primer mes</h3>
-				<p>
-					Dejanos tu email y te enviaremos un código de descuento 
-				</p>
-				<div>
-					<input type="text" placeholder="Email..." />
-					<button class="button">Enviar</button>
-				</div>
-			</div>
-
-			<div class="section-content pv4 ph4">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="text-center">
-							<h3>Categorías</h3>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-4">           
-                        <div class="portfolio-item">
-                            <div class="entry-image">
-                                <img src="images/categorias_chocolate.jpg" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3><a href="javascript:;">Chocolates</a></h3>
-                            </div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">           
-						<div class="portfolio-item">
-                            <div class="entry-image">
-                                <img src="images/categorias_caramelos.jpg" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3><a href="javascript:;">Caramelos</a></h3>
-                            </div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">           
-						<div class="portfolio-item">
-                            <div class="entry-image">
-                                <img src="images/categorias_gomitas.jpg" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3><a href="javascript:;">Gomitas</a></h3>
-                            </div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-4">           
-                        <div class="portfolio-item">
-                            <div class="entry-image">
-                                <img src="images/categorias_chicles.jpg" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3><a href="javascript:;">Chicles</a></h3>
-                            </div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">           
-						<div class="portfolio-item">
-                            <div class="entry-image">
-                                <img src="images/categorias_malvadiscos.jpg" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3><a href="javascript:;">Malvaviscos</a></h3>
-                            </div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">           
-						<div class="portfolio-item">
-                            <div class="entry-image">
-                                <img src="images/categorias_chupetines.jpg" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3><a href="javascript:;">Chupetines</a></h3>
-                            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="section-content pv4 ph4 overlay-color text-light" data-bg-color="#01CCBD">
+			<div class="section-content ph16 pv4 overlay-color text-light" data-bg-color="#01CCBD">
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="text-center">
@@ -324,43 +253,163 @@
 					<div class="col-xs-12 col-sm-4">           
                         <div class="portfolio-item">
                             <div class="entry-image">
-                                <img src="images/tropper.png" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3 class="text-light">Trooper</h3>
-                            </div>
+                                <img src="images/especial_trooper.png" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Trooper</h3>
+							</div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-4">           
-						<div class="portfolio-item">
+                        <div class="portfolio-item">
                             <div class="entry-image">
-                                <img src="images/groot.jpg" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3 class="text-light">Groot</h3>
-                            </div>
+                                <img src="images/especial_groot.png" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Groot</h3>
+							</div>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-4">           
-						<div class="portfolio-item">
+                        <div class="portfolio-item">
                             <div class="entry-image">
-                                <img src="images/batman.png" alt="portfolio">
-                            </div>
-                            <div class="entry-title">
-                                <h3 class="text-light">Batman</h3>
-                            </div>
+                                <img src="images/especial_batman.png" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Batman</h3>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		
+
+			<div class="fullwidth-container pv12">
+				<div class="overlay" data-bg-image="images/producto_1140x561.jpg">
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="producto-container">
+							<h3>Más dulzura en tu vida,<br/>a solo un par de clicks</h3>
+							<p>
+								Nuestros duendes aman lo dulce, pero más aman esparcir
+								dulzura a todos los hogares, no te quedes sin los tuyos
+							</p>	
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="section-content ph16 pv4 categorias">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="text-center">
+							<h3>Categorías</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">           
+                        <div class="portfolio-item">
+                            <div class="entry-image">
+                                <img src="images/categorias_chocolate.jpg" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Chocolates</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">           
+                        <div class="portfolio-item">
+                            <div class="entry-image">
+                                <img src="images/categorias_caramelos.jpg" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Caramelos</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">           
+                        <div class="portfolio-item">
+                            <div class="entry-image">
+                                <img src="images/categorias_gomitas.jpg" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Gomitas</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">           
+                        <div class="portfolio-item">
+                            <div class="entry-image">
+                                <img src="images/categorias_chicles.jpg" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Chicles</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">           
+                        <div class="portfolio-item">
+                            <div class="entry-image">
+                                <img src="images/categorias_malvadiscos.jpg" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Malvaviscos</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">           
+                        <div class="portfolio-item">
+                            <div class="entry-image">
+                                <img src="images/categorias_chupetines.jpg" alt="portfolio">
+							</div>
+							<div class="entry-title">
+								<h3 class="text-light">Chupetines</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-content ph16 pv4 nobottom">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="contacto-container">
+							<div class="contacto-content">
+								<img src="images/cor1.jpg"  />
+								<form>
+									<h3>Contactanos</h3>
+									<label>Nombre</label>
+									<input type="text" placeholder="Nombre..." />
+									<label>Email</label>
+									<input type="text" placeholder="Email..." />
+									<label>Asunto</label>
+									<input type="text" placeholder="Asunto" />
+									<label>Mensaje</label>
+									<textarea placeholder="Escriba su mensaje aquí..."></textarea>	
+									<button type="submit" class="button formSubmit">Enviar</button>
+								</form>
+								<img src="images/cor2.jpg"  />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 		<footer id="footer" class="border-top">
-			<div class="sub-footer">
 				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="pull-left">
+					<div class="row sub-footer">
+						<div class="col-sm-8 info">
+							<div>
+								<p class="social-icons">
+									<img class="social_icon" src="images/twitter.png" />
+									<img class="social_icon" src="images/facebook.png" />
+									<img class="social_icon" src="images/youtube.png" />
+								</p>
 								<ul>
 									<li><a href="javascript:;">Contacto</a></li>
 									<li><a href="javascript:;">Legales</a></li>
@@ -368,16 +417,23 @@
 									<li><a href="javascript:;">FAQ</a></li>
 									<li><a href="javascript:;">Acerca de nosotros</a></li>
 								</ul>
+								<p>© 2020 SweetBox Todos los derechos reservados.</p>		
 							</div>
+							<div class="filler"></div>
+						</div>
 
-							<div class="pull-right">
-								<p>© 2020 SweetBox Todos los derechos reservados.</p>
+						<div class="col-sm-4 Newsletter">
+							<h5 class="text-light">Newsletter</h5>
+							<p>Dejanos tu mail y te hacemos llegar todas las novedades de nuestros productos.</p>
+							<div>
+								<form>
+									<input type="text" placeholder="Email..." />
+									<button class="button">Suscribite</button>	
+								</form>
 							</div>
 						</div>
 					</div>
-				</div>
 			</div>
-
 		</footer>
 		
 	</div>
