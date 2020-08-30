@@ -22,7 +22,7 @@ header#header .header-wrapper {
 }
 header#header #logo {
   display: block;
-  width: 136px;
+  width: 215px;
   height: 100px;
   line-height: 100px;
   text-indent: -9999px;
@@ -1296,7 +1296,7 @@ header#header + section {
   color: #2a2a2a;
 }
 .producto-container p {
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
   padding-top: 10px;
   font-size: 14px;
@@ -1323,12 +1323,14 @@ header#header + section {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  justify-content: center;
 }
 .contacto-container .contacto-content img {
-  width: 250px;
   height: 350px;
 }
 .contacto-container .contacto-content form {
+  max-width: 500px;
+  padding: 0 20px;
   margin-bottom: 50px;
 }
 .nobottom {
@@ -1357,9 +1359,6 @@ header#header + section {
   font-size: 16px;
   font-weight: 500;
 }
-#footer p {
-  font-size: 10px;
-}
 .info {
   display: flex;
   flex-direction: row;
@@ -1367,6 +1366,18 @@ header#header + section {
 }
 .info .filler {
   flex-grow: 1;
+}
+.unboxing_icon {
+  height: 150px;
+  width: 150px;
+}
+.unboxing_text {
+  position: absolute;
+  left: 70px;
+  bottom: -140px;
+}
+.teaser {
+  text-shadow: 1px 1px 1px white;
 }
 /* Content
 ====================================*/
@@ -2073,7 +2084,7 @@ article.blog-item .author-info .info-entry .info-title .info-social a.gp {
   height: 561px;
 }
 .cover-section .cover-entry {
-  width: 620px;
+  width: 695px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2086,6 +2097,7 @@ article.blog-item .author-info .info-entry .info-title .info-social a.gp {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 10;
 }
 .cover-section .cover-entry.has-overlay::before {
   content: '';
@@ -2095,17 +2107,17 @@ article.blog-item .author-info .info-entry .info-title .info-social a.gp {
   width: 100%;
   height: 80%;
   z-index: 1;
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0)));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=0);
   /* IE6-9 */
@@ -2123,7 +2135,7 @@ article.blog-item .author-info .info-entry .info-title .info-social a.gp {
   fill: rgba(255, 255, 255, 0.3);
 }
 .cover-section .cover-entry h2 {
-  font-size: 60px;
+  font-size: 72px;
   font-family: 'Poppins';
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -2132,7 +2144,7 @@ article.blog-item .author-info .info-entry .info-title .info-social a.gp {
   z-index: 10;
   margin: 0px;
   padding: 0px;
-  line-height: 60px;
+  line-height: 72px;
 }
 .cover-section .cover-entry h5 {
   text-transform: uppercase;
@@ -3472,8 +3484,25 @@ body.coming-soon .footer-call2action {
 }
 /* Extra Small Devices - Phones */
 @media screen and (max-width: 767px) {
+  .contacto-container img {
+    display: none;
+  }
+  .cover-section .cover-entry {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   .cover-section .cover-entry h2 {
+    width: 100%;
+    text-align: center;
     font-size: 40px;
+  }
+  .cover-section .cover-entry .subheader {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cover-section .cover-entry .subheader .button {
+    width: 170px;
   }
   .discount-container h3 {
     font-size: 24px;
