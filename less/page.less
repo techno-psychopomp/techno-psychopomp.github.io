@@ -2,6 +2,11 @@
 ------------------------------------------*/
 .cover-section{
 	height: 561px;
+
+	&.cover-section-product {
+		height: 430px;
+		padding-top: 100px;
+	}
 	
 	.cover-entry{
 		width: 695px;
@@ -18,6 +23,30 @@
 			flex-direction: row;
 			justify-content: space-between;
 			z-index: 10;
+		}
+
+		&.cover-product {
+			flex-direction: row;
+			align-items: center;
+			padding-left: 0;
+			width: 100%;
+
+			h2 {
+				font-size: 58px;
+				line-height: 64px;
+				padding-top: 40px;
+			}
+
+			.cover-product-header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.button {
+				margin-top: 40px;
+				z-index: 10;
+			}
 		}
 
 

@@ -49,7 +49,9 @@
 
 /* Small Devices - Tablets */
 @media screen and (min-width: 768px) and (max-width: 991px){
-
+	.image-hide-mobile {
+		display: none;
+	}
 
 	/* Master Slider */
 	.ms-fullscreen-template{
@@ -77,12 +79,28 @@
 		}
 	}
 
-
+	.product-detail {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 }
 
 
 /* Extra Small Devices - Phones */
 @media screen and (max-width: 767px){
+
+	.product-detail {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	
+	.product-overview {
+		padding: 0 40px;
+	}
+
+	.image-hide-mobile {
+		display: none;
+	}
 
 	.contacto-container {
 		img {
@@ -100,6 +118,7 @@
 		width: 100%;
 		text-align: center;
 		font-size: 40px;
+		line-height: 40px;
 	}
 
 	.cover-section .cover-entry .subheader {
