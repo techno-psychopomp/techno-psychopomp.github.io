@@ -1381,7 +1381,6 @@ header#header + section {
 }
 .image-hero-side {
   width: 260px;
-  align-self: flex-end;
 }
 .product-overview {
   height: 260px;
@@ -1411,6 +1410,13 @@ header#header + section {
   padding: 0;
   margin: 0;
   font-size: 12px;
+}
+.product-detail p.listitem {
+  padding-left: 30px;
+  background-image: url(images/check_icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px;
 }
 .product-detail p.subnote {
   width: 442px;
