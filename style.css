@@ -3602,6 +3602,9 @@ body.coming-soon .footer-call2action {
 }
 /* Extra Small Devices - Phones */
 @media screen and (max-width: 767px) {
+  .title-envios {
+    font-size: 26px;
+  }
   .product-detail {
     flex-direction: column-reverse;
     align-items: center;
