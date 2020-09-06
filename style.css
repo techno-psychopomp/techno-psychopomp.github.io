@@ -2183,9 +2183,12 @@ article.blog-item .author-info .info-entry .info-title .info-social a.gp {
 .cover-section .cover-entry .subheader {
   margin-top: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   z-index: 10;
+}
+.cover-section .cover-entry .subheader .button {
+  width: 170px;
 }
 .cover-section .cover-entry.cover-product {
   flex-direction: row;
@@ -3626,9 +3629,6 @@ body.coming-soon .footer-call2action {
   .cover-section .cover-entry .subheader {
     flex-direction: column;
     align-items: center;
-  }
-  .cover-section .cover-entry .subheader .button {
-    width: 170px;
   }
   .discount-container h3 {
     font-size: 24px;
